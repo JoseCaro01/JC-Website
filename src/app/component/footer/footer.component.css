@@ -1,7 +1,6 @@
 * {
     background-color:#2C2B3C;
     color: whitesmoke;
-  
 }
 .line {
    border-top: 2px solid white;
@@ -14,19 +13,18 @@ h1 {
 }
 h3{
     font-size: calc(0.75em + 1.5vw);
-    font-family: Brush Script MT;
+    font-family: 'Pacifico', cursive;
     text-align: left;
-    padding: 30px;
+    padding: 1em 0 1em 1em;
+   
 }
 h4 {
     font-size: calc(0.75em + 1vw);
 }
 p{
     text-align: justify;
-    font-size: calc(0.75em + 0.25vw);
-    padding: 8px 0 8px 0 ;
-
-
+    font-size: calc(0.75em + 0.30vw);
+    padding: 1em 0 1em 0 ;
 }
 .container {
     display: grid; 
@@ -40,8 +38,8 @@ p{
 
 .contact {
     grid-area: contact;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
 
 }
 .social {
@@ -50,7 +48,7 @@ p{
 }
 li {
     list-style-type:none;
-    margin: 8px 0 8px 0 ;
+    margin: .5em 0 .5em 0 ;
 }
 a{
     text-decoration: none;
@@ -76,6 +74,9 @@ img{
         grid-template-areas: 
           "contact social"; 
         padding-bottom:30px ;  
+    }
+    p {
+        font-size: calc(0.60em + 0.25vw);
     }
 }
 

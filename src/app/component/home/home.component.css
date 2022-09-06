@@ -61,11 +61,21 @@ img {
     .container {
         display: grid; 
         grid-template-columns: 1fr; 
-        grid-template-rows: 45vh 45vh; 
-        gap: 0px 30px; 
+        grid-template-rows: 1fr 1fr; 
+        
         grid-template-areas: 
         "image"
           "presentation";
           
+    }
+    .margin {
+        padding-left: 0;
+    }
+    .image { 
+        grid-area: image;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        padding:2em 0 2em 0 ;
     }
 }

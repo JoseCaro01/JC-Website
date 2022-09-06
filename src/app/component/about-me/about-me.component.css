@@ -37,9 +37,22 @@ p{
 .margin {
     margin:calc(15vh + 7.5vw) 5px 30px 5px;
 }
-@media (max-width: 1080px) {
+@media only screen and (max-width: 575px) {
     .margin {
-        margin:calc(125px) 5px 30px 5px;
+        margin:0;
+    }
+    .container {
+        min-height: auto;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 30px; 
+        grid-template-areas: 
+          "presentation technologies"; 
+    }
+    section {
+        margin: 2em 0 2em 0;
+       
     }
 }
 
