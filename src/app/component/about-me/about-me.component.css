@@ -1,0 +1,45 @@
+*{
+    background-color:#1B2432;
+    color: whitesmoke;    
+}
+h1 {
+    font-size: calc(0.75em + 3vw);
+}
+h3{
+    font-size: calc(0.75em + 1.5vw);
+    text-align: center;
+}
+h4 {
+    font-size: calc(0.75em + 1vw);
+}
+.container {
+    min-height: 100vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 30px; 
+    grid-template-areas: 
+      "presentation technologies"; 
+}
+.presentation { 
+    grid-area: presentation; 
+  
+}
+p{
+    text-align: justify;
+    font-size: calc(0.75em + 0.25vw);
+    padding-left: 30px;
+}
+.technologies {
+    grid-area: technologies;
+}
+
+.margin {
+    margin:calc(15vh + 7.5vw) 5px 30px 5px;
+}
+@media (max-width: 1080px) {
+    .margin {
+        margin:calc(125px) 5px 30px 5px;
+    }
+}
+

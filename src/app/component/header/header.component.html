@@ -1,0 +1,15 @@
+<nav class="header">
+    <ul class="menu" *ngIf="show">
+        <li (click)="showMenu()"><img src="assets/images/close.png"  >Close</li>
+        <li (click)="scrollButtonNavigation('home')" > <img src="assets/images/home.png">Home</li>
+        <li (click)="scrollButtonNavigation('about')"> <img src="assets/images/about.png">About me</li>
+        <li (click)="scrollButtonNavigation('contact')"> <img src="assets/images/contact.png">Contact</li>
+    </ul>
+    <ul class="menu-list" >
+        <img  class="burger" src="assets/images/burger.png" (click)="showMenu()">
+        <h3>JC Website</h3>
+        <li (click)="scrollButtonNavigation('home')">Home</li>
+        <li (click)="scrollButtonNavigation('about')">About me</li>
+        <li (click)="scrollButtonNavigation('contact')">Contact</li>
+    </ul>
+</nav>

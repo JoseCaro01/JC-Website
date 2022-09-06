@@ -1,0 +1,59 @@
+*{
+    background-color:#1B2432;
+    color: whitesmoke;    
+}
+.image { 
+   display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 30px; 
+    grid-template-areas: 
+      "spring laravel flutter" 
+      "ionic angular android"
+      ; 
+}
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.responsive {
+    width: 50%;
+    height: auto;
+}
+.spring {
+    grid-area: spring;
+    
+}
+.laravel {
+    grid-area: laravel;
+}
+.flutter {
+    grid-area: flutter;
+}
+.android {
+    grid-area: android;
+}
+.ionic {
+    grid-area: ionic;
+}
+.angular {
+    grid-area: angular;
+}
+
+@media (max-width: 1080px) {
+    .image { 
+        display: grid; 
+         grid-template-columns: 1fr 1fr; 
+         grid-template-rows: 1fr 1fr 1fr; 
+         gap: 15px 0px; 
+         grid-template-areas: 
+           "spring laravel"
+           "flutter ionic"
+           "angular android"; 
+     }
+    .responsive {
+        width: 35%;
+        height: auto;
+    }
+}
