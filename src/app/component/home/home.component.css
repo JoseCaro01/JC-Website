@@ -5,6 +5,12 @@
 h1 {
     font-size: calc(0.75em + 3vw);
     text-align: center;
+ 
+}
+h1::after {
+    content: "\25AE";
+    animation:blinker 1s linear infinite;
+    
 }
 h2{
     font-size: calc(0.75em + 1.5vw);
@@ -13,6 +19,12 @@ h2{
 h4 {
     font-size: calc(0.75em + 1vw);
     text-align: center;
+    
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
 .container {
     display: grid; 

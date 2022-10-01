@@ -23,9 +23,9 @@ export class HeaderComponent implements OnInit {
   }
 
   scrollButtonNavigation(site:string) :void {
-    if(site=="about") document.getElementById("about")?.scrollIntoView()
-    else if(site=="contact") document.getElementById("footer")?.scrollIntoView()
-    else document.getElementById("home")?.scrollIntoView()
+    if(site=="about") document.getElementById("about")?.scrollIntoView({behavior:"smooth"})
+    else if(site=="contact") document.getElementById("footer")?.scrollIntoView({behavior:"smooth"})
+    else window.scrollTo({left:0,top:0,behavior:"smooth"})
   }
 
 }

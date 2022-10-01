@@ -1,0 +1,48 @@
+*{
+    background-color:#1B2432;
+    color: whitesmoke;  
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+h3{
+    font-size: calc(0.75em + 1.5vw);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 30px; 
+    grid-template-areas: 
+      "presentation technologies"; 
+    
+}
+
+.presentation { 
+    grid-area: presentation; 
+}
+
+.technologies {
+    grid-area: technologies;
+}
+
+@media only screen and (max-width: 575px) {
+    .container {
+        min-height: auto;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 30px; 
+        grid-template-areas: 
+          "presentation technologies"; 
+    }
+    article {
+        margin: 2em 0 2em 0;
+       
+    }
+}

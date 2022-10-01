@@ -2,57 +2,42 @@
     background-color:#1B2432;
     color: whitesmoke;    
 }
-h1 {
-    font-size: calc(0.75em + 3vw);
-}
 h3{
     font-size: calc(0.75em + 1.5vw);
     text-align: center;
-}
-h4 {
-    font-size: calc(0.75em + 1vw);
-}
-.container {
-    min-height: 100vh;
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 30px; 
-    grid-template-areas: 
-      "presentation technologies"; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .presentation { 
     grid-area: presentation; 
-  
 }
 p{
+    margin-top: 4em;
+    margin-bottom: 4em;
     text-align: justify;
     font-size: calc(0.75em + 0.25vw);
     padding-left: 30px;
+    grid-area: "parram";
 }
-.technologies {
-    grid-area: technologies;
+.cv {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    border-radius: 5%;
+    color: white;
+    background-color:#B76D68;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+    justify-content: center;
+    padding: 10px; 
 }
 
-.margin {
-    margin:calc(15vh + 7.5vw) 5px 30px 5px;
-}
-@media only screen and (max-width: 575px) {
-    .margin {
-        margin:0;
-    }
-    .container {
-        min-height: auto;
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 0px 30px; 
-        grid-template-areas: 
-          "presentation technologies"; 
-    }
-    section {
-        margin: 2em 0 2em 0;
-       
-    }
-}
+
+
+
 

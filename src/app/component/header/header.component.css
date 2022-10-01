@@ -2,6 +2,9 @@
     background-color:#2C2B3C;
     color: whitesmoke;
     height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 h3{
     font-size: calc(0.75em + 1.5vw);
@@ -10,19 +13,18 @@ h3{
     padding: 30px;
     margin-right:auto;
 }
-
 .menu-list {
     list-style-type: none;
     display: flex;
     justify-content: right;
     align-items: center;
     height: 100%;
-
 }
 
 .menu-list li:hover {
     background-color:#B76D68 ;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5%;
 }
 li{
     margin-left: 20px;
@@ -45,18 +47,19 @@ a {
     display: none;
   
 }
+@media only screen and (max-width: 1080px) {
+    
 .menu {
-    position: fixed;
+    position: sticky;
     background-color: white;
     width: 200px;
     height: 100vh;
     z-index: 2;
+    
 }
 .menu li {
- color: rgb(47, 47, 47);   
-}
-
-@media (max-width: 1080px) {
+    color: rgb(47, 47, 47);   
+}       
 .burger{
     display: initial;
 }

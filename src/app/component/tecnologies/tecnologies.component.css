@@ -2,15 +2,23 @@
     background-color:#1B2432;
     color: whitesmoke;    
 }
+h3{
+    font-size: calc(0.75em + 1.5vw);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .image { 
+    margin-top: 4em;
+    margin-bottom: 4em;
    display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 0px 30px; 
     grid-template-areas: 
       "spring laravel flutter" 
-      "ionic angular android"
-      ; 
+      "ionic angular android"; 
 }
 div {
     display: flex;
